@@ -1,0 +1,14 @@
+echo "Enter an integer as the base"
+read m
+
+echo "Enter a positive integer as the power of the base"
+read n
+
+result=1
+
+for((i=0;i<n;i++))
+do
+	result=$((result * m))
+done
+
+echo "The result of $m to the $n power is: $result"
